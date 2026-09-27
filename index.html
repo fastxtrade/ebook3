@@ -4,15 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>शेअर मार्केट PRACTICAL MARATHI | Practical Trading Workbook</title>
+  <title>व्यवसाय आहे, ग्राहक कुठे आहेत? | Practical Business Guide</title>
+  <meta name="description" content="ग्राहक शोधण्यापासून विक्री वाढवण्यापर्यंतचा संपूर्ण मराठी Practical Business Guide. फक्त ₹400 मध्ये Digital eBook.">
 
-  <meta name="description"
-    content="शेअर मार्केट PRACTICAL MARATHI - Basics, Charts, Intraday, Risk Management आणि Trading Psychology समजून घेण्यासाठी Practical Marathi eBook.">
+  <!-- =====================================================
+       META PIXEL CODE
+       तुमचा Meta Pixel Code खाली paste करा
+       ===================================================== -->
 
-  <!-- Marathi / Devanagari Font -->
+  <!-- Meta Pixel Code START -->
+  <!--
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+  -->
+  <!-- Meta Pixel Code END -->
+
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -26,10 +53,10 @@
     }
 
     body {
-      font-family: "Noto Sans Devanagari", sans-serif;
+      font-family: 'Noto Sans Devanagari', sans-serif;
       background: #ffffff;
       color: #111827;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
     a {
@@ -37,13 +64,8 @@
       color: inherit;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
     .container {
-      width: min(1120px, 92%);
+      width: min(1080px, 92%);
       margin: auto;
     }
 
@@ -52,122 +74,109 @@
     ========================= */
 
     .hero {
-      background: #f7f8fa;
-      padding: 55px 0 65px;
-      border-bottom: 1px solid #e5e7eb;
+      padding: 55px 0 70px;
+      border-bottom: 1px solid #eeeeee;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: 1fr 0.85fr;
       align-items: center;
-      gap: 45px;
+      gap: 55px;
     }
 
-    .hero-content {
-      text-align: left;
-    }
-
-    .small-label {
+    .eyebrow {
       display: inline-block;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 1.5px;
-      color: #334155;
+      color: #a16207;
       margin-bottom: 15px;
-      text-transform: uppercase;
     }
 
     .hero h1 {
-      font-size: clamp(34px, 5vw, 62px);
-      line-height: 1.12;
-      font-weight: 800;
+      font-size: clamp(40px, 5vw, 68px);
+      line-height: 1.08;
+      font-weight: 900;
       color: #101828;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .hero h1 span {
       display: block;
-      color: #172033;
     }
 
     .hero-subtitle {
-      font-size: clamp(17px, 2vw, 21px);
-      color: #475467;
-      max-width: 600px;
-      margin-bottom: 22px;
-    }
-
-    .topic-line {
-      font-size: 14px;
-      font-weight: 600;
-      color: #344054;
-    }
-
-    /* Ebook Mockup */
-
-    .ebook-area {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .ebook-shadow {
-      width: min(350px, 80%);
-      padding: 12px;
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow:
-        0 25px 60px rgba(15, 23, 42, 0.16),
-        0 5px 15px rgba(15, 23, 42, 0.08);
-      transform: rotate(1.5deg);
-    }
-
-    .ebook-cover {
-      width: 100%;
-      aspect-ratio: 3 / 4;
-      border-radius: 4px;
-      overflow: hidden;
-      background: linear-gradient(145deg, #ffffff, #eef1f5);
-      border: 1px solid #e2e8f0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .ebook-cover img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .cover-placeholder {
-      padding: 30px;
-      text-align: center;
-    }
-
-    .cover-placeholder .cover-top {
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      color: #475467;
+      font-size: 19px;
+      color: #4b5563;
+      max-width: 570px;
       margin-bottom: 25px;
     }
 
-    .cover-placeholder h2 {
-      font-size: 27px;
-      line-height: 1.35;
-      color: #111827;
-      margin-bottom: 12px;
+    .price-box {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 22px;
     }
 
-    .cover-placeholder p {
-      font-size: 14px;
-      color: #667085;
+    .old-price {
+      font-size: 22px;
+      color: #9ca3af;
+      text-decoration: line-through;
+      font-weight: 600;
+    }
+
+    .new-price {
+      font-size: 38px;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #facc15;
+      color: #111827;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 15px 28px;
+      border-radius: 8px;
+      transition: 0.2s ease;
+      box-shadow: 0 5px 0 #d4a900;
+    }
+
+    .cta:hover {
+      transform: translateY(2px);
+      box-shadow: 0 3px 0 #d4a900;
+    }
+
+    .instant {
+      font-size: 13px;
+      color: #6b7280;
+      margin-top: 15px;
+    }
+
+    /* BOOK COVER */
+
+    .cover-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .book-cover {
+      width: min(360px, 90%);
+      border-radius: 4px;
+      box-shadow:
+        0 25px 50px rgba(0,0,0,0.18),
+        0 8px 20px rgba(0,0,0,0.10);
+      display: block;
     }
 
     /* =========================
-       COMMON
+       COMMON SECTION
     ========================= */
 
     section {
@@ -175,450 +184,108 @@
     }
 
     .section-title {
-      text-align: center;
-      font-size: clamp(27px, 4vw, 40px);
-      line-height: 1.3;
-      margin-bottom: 18px;
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.2;
+      font-weight: 900;
       color: #101828;
+      margin-bottom: 35px;
     }
 
-    .section-description {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 42px;
-      color: #667085;
-      font-size: 17px;
+    .section-title span {
+      color: #b45309;
     }
 
     /* =========================
-       INTRO
+       PROBLEM
     ========================= */
 
-    .intro {
-      background: #ffffff;
+    .problem {
+      background: #fafafa;
     }
 
-    .intro-box {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .intro-box p {
-      font-size: 18px;
-      color: #475467;
-      margin-bottom: 20px;
-    }
-
-    .questions {
-      margin-top: 35px;
+    .problem-list {
       display: grid;
-      gap: 10px;
-      max-width: 650px;
-      margin-left: auto;
-      margin-right: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      max-width: 850px;
     }
 
-    .question-line {
-      font-size: 17px;
-      color: #344054;
-    }
-
-    /* =========================
-       QUESTION CARDS
-    ========================= */
-
-    .problem-section {
-      background: #f8fafc;
-    }
-
-    .problem-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 15px;
-    }
-
-    .problem-card {
-      background: #ffffff;
-      border: 1px solid #e4e7ec;
-      border-radius: 14px;
-      padding: 23px 18px;
-      min-height: 150px;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 5px 20px rgba(16, 24, 40, 0.04);
-    }
-
-    .problem-card p {
-      font-size: 15px;
-      color: #344054;
-      font-weight: 500;
-    }
-
-    /* =========================
-       GREEN HIGHLIGHT
-    ========================= */
-
-    .highlight-section {
-      padding-top: 35px;
-      padding-bottom: 35px;
-    }
-
-    .highlight-box {
-      background: #f0fdf4;
-      border: 1px solid #bbf7d0;
-      border-radius: 18px;
-      padding: 35px;
-      max-width: 950px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .highlight-box h2 {
-      font-size: 27px;
-      color: #166534;
-      margin-bottom: 10px;
-    }
-
-    .highlight-box p {
-      color: #365314;
-      font-size: 16px;
-    }
-
-    /* =========================
-       LEARNING CARDS
-    ========================= */
-
-    .learning-section {
-      background: #ffffff;
-    }
-
-    .learning-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .learning-card {
-      border: 1px solid #e4e7ec;
-      border-radius: 16px;
-      padding: 28px;
-      background: #ffffff;
-      transition: 0.2s ease;
-    }
-
-    .learning-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 15px 35px rgba(16, 24, 40, 0.07);
-    }
-
-    .learning-icon {
-      font-size: 30px;
-      margin-bottom: 13px;
-    }
-
-    .learning-card h3 {
-      font-size: 20px;
-      color: #101828;
-      margin-bottom: 8px;
-    }
-
-    .learning-card p {
-      color: #667085;
-      font-size: 15px;
-    }
-
-    /* =========================
-       WHO IS IT FOR
-    ========================= */
-
-    .audience-section {
-      background: #f8fafc;
-    }
-
-    .audience-list {
-      max-width: 750px;
-      margin: auto;
-      display: grid;
-      gap: 13px;
-    }
-
-    .audience-item {
+    .problem-item {
+      padding: 18px 20px;
+      border-left: 3px solid #facc15;
       background: white;
-      border: 1px solid #e4e7ec;
-      border-radius: 12px;
-      padding: 17px 20px;
-      font-size: 16px;
-      color: #344054;
-    }
-
-    /* =========================
-       WHAT YOU GET
-    ========================= */
-
-    .get-section {
-      background: #ffffff;
-    }
-
-    .get-box {
-      max-width: 800px;
-      margin: auto;
-      border: 1px solid #e4e7ec;
-      border-radius: 18px;
-      padding: 35px;
-      background: #ffffff;
-      box-shadow: 0 10px 35px rgba(16, 24, 40, 0.05);
-    }
-
-    .get-list {
-      display: grid;
-      gap: 13px;
-    }
-
-    .get-item {
       font-size: 17px;
-      color: #344054;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #f0f2f5;
+      font-weight: 600;
     }
 
-    .get-item:last-child {
-      border-bottom: none;
-    }
-
-    /* =========================
-       OFFER
-    ========================= */
-
-    .offer-section {
-      background: #f7f8fa;
-    }
-
-    .offer-box {
-      max-width: 760px;
-      margin: auto;
-      text-align: center;
-      background: #ffffff;
-      border: 1px solid #d0d5dd;
-      border-radius: 22px;
-      padding: 45px 30px;
-      box-shadow: 0 20px 55px rgba(16, 24, 40, 0.09);
-    }
-
-    .offer-label {
-      display: inline-block;
-      background: #111827;
-      color: #ffffff;
-      border-radius: 30px;
-      padding: 7px 18px;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-    }
-
-    .offer-title {
-      font-size: 26px;
-      font-weight: 800;
-      margin-bottom: 15px;
-    }
-
-    .price-old {
-      font-size: 24px;
-      color: #98a2b3;
-      text-decoration: line-through;
-      margin-bottom: 2px;
-    }
-
-    .price-new {
-      font-size: clamp(52px, 8vw, 78px);
-      line-height: 1;
-      font-weight: 800;
-      color: #111827;
-      margin-bottom: 8px;
-    }
-
-    .offer-text {
-      color: #475467;
+    .problem-note {
+      margin-top: 28px;
       font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .offer-product {
-      font-size: 21px;
       font-weight: 700;
-      color: #101828;
-      margin-bottom: 30px;
+      color: #374151;
     }
 
     /* =========================
-       BUTTONS
+       LEARN
     ========================= */
 
-    .cta-buttons {
+    .learn-grid {
       display: grid;
-      gap: 13px;
-      max-width: 480px;
-      margin: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px 50px;
     }
 
-    .buy-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 58px;
-      padding: 13px 20px;
-      border-radius: 10px;
-      background: #111827;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 700;
-      transition: 0.2s ease;
+    .learn-item {
+      padding: 20px 0;
+      border-bottom: 1px solid #e5e7eb;
     }
 
-    .buy-btn:hover {
-      background: #263244;
-      transform: translateY(-1px);
+    .learn-item h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 5px;
     }
 
-    .buy-btn.primary {
-      background: #0f172a;
-    }
-
-    .payment-note {
-      margin-top: 17px;
-      color: #98a2b3;
-      font-size: 13px;
+    .learn-item p {
+      color: #6b7280;
+      font-size: 15px;
     }
 
     /* =========================
-       PAYMENT SUCCESS
+       VALUE
     ========================= */
 
-    .success-section {
-      background: #ffffff;
-    }
-
-    .success-box {
-      max-width: 700px;
-      margin: auto;
-      border: 1px solid #d0d5dd;
-      border-radius: 18px;
-      padding: 35px;
-      text-align: center;
-    }
-
-    .success-box h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .success-box p {
-      color: #667085;
-      margin-bottom: 20px;
-    }
-
-    .access-btn {
-      display: inline-flex;
+    .value {
       background: #111827;
       color: white;
-      padding: 13px 25px;
-      border-radius: 9px;
-      font-weight: 700;
+    }
+
+    .value .section-title {
+      color: white;
+      margin-bottom: 18px;
+    }
+
+    .value p {
+      max-width: 780px;
+      font-size: 18px;
+      color: #d1d5db;
     }
 
     /* =========================
-       TRUST
+       WHO
     ========================= */
 
-    .trust-section {
-      padding-top: 40px;
-      padding-bottom: 55px;
-    }
-
-    .trust-grid {
-      max-width: 850px;
-      margin: auto;
+    .who-list {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px 50px;
+      max-width: 800px;
     }
 
-    .trust-item {
-      text-align: center;
-      padding: 20px 10px;
-    }
-
-    .trust-icon {
-      font-size: 28px;
-      margin-bottom: 8px;
-    }
-
-    .trust-item strong {
-      display: block;
-      font-size: 15px;
-    }
-
-    .trust-item span {
-      font-size: 13px;
-      color: #667085;
-    }
-
-    /* =========================
-       DISCLAIMER
-    ========================= */
-
-    .disclaimer-section {
-      background: #f8fafc;
-      padding: 50px 0;
-    }
-
-    .disclaimer-box {
-      max-width: 900px;
-      margin: auto;
-      border: 1px solid #e4e7ec;
-      background: #ffffff;
-      border-radius: 15px;
-      padding: 28px;
-    }
-
-    .disclaimer-box h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .disclaimer-box p {
-      color: #667085;
-      font-size: 14px;
-    }
-
-    /* =========================
-       SOCIAL
-    ========================= */
-
-    .social-section {
-      text-align: center;
-      background: #ffffff;
-    }
-
-    .social-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .social-btn {
-      border: 1px solid #d0d5dd;
-      padding: 12px 28px;
-      border-radius: 9px;
-      font-weight: 700;
-      background: #ffffff;
-      transition: 0.2s;
-    }
-
-    .social-btn:hover {
-      background: #f8fafc;
+    .who-item {
+      font-size: 17px;
+      font-weight: 600;
+      padding: 8px 0;
     }
 
     /* =========================
@@ -626,54 +293,49 @@
     ========================= */
 
     .final-cta {
-      background: #101828;
-      color: white;
       text-align: center;
-      padding: 75px 20px;
+      background: #fafafa;
+      border-top: 1px solid #eeeeee;
     }
 
-    .final-cta h2 {
-      font-size: clamp(28px, 4vw, 42px);
-      margin-bottom: 12px;
+    .final-cta .section-title {
+      margin-bottom: 10px;
     }
 
-    .final-cta p {
-      color: #d0d5dd;
-      font-size: 18px;
-      margin-bottom: 15px;
+    .final-text {
+      color: #6b7280;
+      margin-bottom: 20px;
     }
 
     .final-price {
-      margin-bottom: 25px;
+      margin: 15px 0 25px;
     }
 
-    .final-old {
-      color: #98a2b3;
-      text-decoration: line-through;
-      font-size: 21px;
+    .final-price .old-price {
       margin-right: 10px;
     }
 
-    .final-new {
-      font-size: 35px;
-      font-weight: 800;
+    /* =========================
+       INSTAGRAM
+    ========================= */
+
+    .instagram {
+      text-align: center;
+      padding: 40px 0;
+      border-top: 1px solid #eeeeee;
     }
 
-    .final-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      color: #101828;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 16px;
-      font-weight: 800;
-      transition: 0.2s;
+    .instagram p {
+      color: #6b7280;
+      margin-bottom: 12px;
+      font-size: 14px;
     }
 
-    .final-btn:hover {
-      transform: translateY(-2px);
+    .instagram a {
+      font-weight: 800;
+      color: #111827;
+      border-bottom: 2px solid #facc15;
+      padding-bottom: 3px;
     }
 
     /* =========================
@@ -681,104 +343,98 @@
     ========================= */
 
     footer {
-      background: #0b1220;
-      color: #98a2b3;
       text-align: center;
-      padding: 22px 15px;
-      font-size: 13px;
+      padding: 20px;
+      font-size: 12px;
+      color: #9ca3af;
     }
 
     /* =========================
        MOBILE
     ========================= */
 
-    @media (max-width: 900px) {
-
-      .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero-content {
-        text-align: center;
-      }
-
-      .hero-subtitle {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .problem-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .learning-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      section {
-        padding: 55px 0;
-      }
+    @media (max-width: 768px) {
 
       .hero {
         padding: 35px 0 50px;
       }
 
+      .hero-grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+        text-align: center;
+      }
+
       .hero h1 {
-        font-size: 35px;
+        font-size: 42px;
       }
 
       .hero-subtitle {
         font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
-      .ebook-shadow {
-        width: 75%;
+      .price-box {
+        justify-content: center;
       }
 
-      .problem-grid {
-        grid-template-columns: 1fr;
+      .new-price {
+        font-size: 34px;
       }
 
-      .problem-card {
-        min-height: auto;
-        padding: 20px;
-      }
-
-      .learning-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .learning-card {
-        padding: 23px;
-      }
-
-      .highlight-box,
-      .get-box,
-      .offer-box,
-      .success-box,
-      .disclaimer-box {
-        padding: 25px 20px;
-      }
-
-      .price-new {
-        font-size: 58px;
-      }
-
-      .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .final-cta {
-        padding: 60px 20px;
-      }
-
-      .final-btn {
+      .cover-area {
         width: 100%;
-        max-width: 400px;
+      }
+
+      .book-cover {
+        width: 72%;
+        max-width: 300px;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+
+      .section-title {
+        font-size: 31px;
+        margin-bottom: 28px;
+      }
+
+      .problem-list,
+      .learn-grid,
+      .who-list {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .problem-item {
+        font-size: 15px;
+      }
+
+      .learn-item h3 {
+        font-size: 18px;
+      }
+
+      .value p {
+        font-size: 16px;
+      }
+
+      .cta {
+        width: 100%;
+        max-width: 360px;
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .book-cover {
+        width: 78%;
       }
     }
   </style>
@@ -787,80 +443,59 @@
 <body>
 
   <!-- =========================
-       HERO
-  ========================== -->
+       HERO SECTION
+  ========================= -->
 
   <header class="hero">
-    <div class="container">
+    <div class="container hero-grid">
 
-      <div class="hero-grid">
+      <div class="hero-content">
 
-        <div class="hero-content">
-
-          <div class="small-label">
-            PRACTICAL TRADING WORKBOOK
-          </div>
-
-          <h1>
-            शेअर मार्केट
-            <span>PRACTICAL MARATHI</span>
-          </h1>
-
-          <p class="hero-subtitle">
-            शून्यापासून Practical Trading पर्यंतचा
-            मराठी मार्गदर्शक
-          </p>
-
-          <p class="topic-line">
-            Basics • Charts • Intraday • Risk Management • Trading Psychology
-          </p>
-
+        <div class="eyebrow">
+          PRACTICAL BUSINESS GUIDE
         </div>
 
-        <div class="ebook-area">
+        <h1>
+          व्यवसाय आहे,
+          <span>ग्राहक कुठे आहेत?</span>
+        </h1>
 
-          <div class="ebook-shadow">
+        <p class="hero-subtitle">
+          ग्राहक शोधण्यापासून विक्री वाढवण्यापर्यंतचा
+          संपूर्ण मराठी मार्गदर्शक
+        </p>
 
-            <div class="ebook-cover">
-
-              <!--
-                IMPORTANT:
-                ebook-cover.png नावाची तुमची actual cover image
-                index.html सोबत upload करा.
-              -->
-
-              <img
-                src="cover.jpeg"
-                alt="शेअर मार्केट Practical Marathi eBook"
-                onerror="this.style.display='none'; document.getElementById('coverPlaceholder').style.display='block';"
-              >
-
-              <div
-                class="cover-placeholder"
-                id="coverPlaceholder"
-                style="display:none;"
-              >
-                <div class="cover-top">
-                  PRACTICAL TRADING WORKBOOK
-                </div>
-
-                <h2>
-                  शेअर मार्केट<br>
-                  PRACTICAL MARATHI
-                </h2>
-
-                <p>
-                  शून्यापासून Practical Trading पर्यंतचा
-                  मराठी मार्गदर्शक
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
+        <div class="price-box">
+          <div class="old-price">₹999</div>
+          <div class="new-price">₹400</div>
         </div>
 
+        <!-- PAYMENT LINK येथे बदला -->
+        <a href="https://superprofile.bio/vp/व्यवसाय-आहे-ग्राहक-कुठे-आहेत-"
+           class="cta"
+           onclick="trackPurchaseClick()">
+          आत्ताच eBook खरेदी करा →
+        </a>
+
+        <p class="instant">
+          खरेदी केल्यानंतर Digital eBook ला Instant Access
+        </p>
+
+      </div>
+
+      <!--
+        IMPORTANT:
+        तुमच्या eBook Cover च्या file चे नाव
+        "ebook-cover.jpg" असे ठेवा.
+        किंवा खाली src मध्ये तुमच्या image चे नाव द्या.
+      -->
+
+      <div class="cover-area">
+        <img
+          src="cover.jpeg"
+          alt="व्यवसाय आहे, ग्राहक कुठे आहेत? eBook Cover"
+          class="book-cover"
+        >
       </div>
 
     </div>
@@ -868,586 +503,195 @@
 
 
   <!-- =========================
-       INTRO
-  ========================== -->
+       PROBLEM SECTION
+  ========================= -->
 
-  <section class="intro">
-
-    <div class="container">
-
-      <div class="intro-box">
-
-        <h2 class="section-title">
-          Trading शिकायचं आहे…
-          <br>
-          पण सुरुवात कुठून करायची?
-        </h2>
-
-        <p>
-          शेअर मार्केटमध्ये सुरुवात करताना अनेकांना
-          एकच प्रश्न पडतो —
-        </p>
-
-        <div class="questions">
-
-          <div class="question-line">
-            Chart कसा समजायचा?
-          </div>
-
-          <div class="question-line">
-            Trade कसा Plan करायचा?
-          </div>
-
-          <div class="question-line">
-            Risk किती घ्यायचा?
-          </div>
-
-          <div class="question-line">
-            आणि चुका कशा टाळायच्या?
-          </div>
-
-        </div>
-
-        <p style="margin-top:25px;">
-          <strong>शेअर मार्केट PRACTICAL MARATHI</strong>
-          हे eBook तुम्हाला Trading समजून घेण्यासाठी
-          एक structured आणि practical मार्गदर्शन देण्यासाठी
-          तयार करण्यात आले आहे.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PROBLEMS
-  ========================== -->
-
-  <section class="problem-section">
-
+  <section class="problem">
     <div class="container">
 
       <h2 class="section-title">
-        तुम्हालाही हे प्रश्न पडतात का?
+        तुमचा व्यवसाय आहे…
+        <br>
+        पण <span>ग्राहक कुठे आहेत?</span>
       </h2>
 
-      <div class="problem-grid">
+      <div class="problem-list">
 
-        <div class="problem-card">
-          <p>
-            😕 शेअर मार्केटमध्ये सुरुवात कुठून करावी
-            हे कळत नाही?
-          </p>
+        <div class="problem-item">
+          ❌ योग्य ग्राहक कोण आहेत हे समजत नाही?
         </div>
 
-        <div class="problem-card">
-          <p>
-            😕 Chart पाहतो, पण त्यातून काय समजायचं
-            हे कळत नाही?
-          </p>
+        <div class="problem-item">
+          ❌ ग्राहक कुठून मिळवायचे हे कळत नाही?
         </div>
 
-        <div class="problem-card">
-          <p>
-            😕 Intraday Trading करताना योग्य
-            Planning होत नाही?
-          </p>
+        <div class="problem-item">
+          ❌ Marketing करूनही अपेक्षित Response मिळत नाही?
         </div>
 
-        <div class="problem-card">
-          <p>
-            😕 Stop Loss, Risk Management आणि
-            Position Size याबद्दल confusion आहे?
-          </p>
-        </div>
-
-        <div class="problem-card">
-          <p>
-            😕 Trading Psychology मुळे वारंवार
-            चुकीचे निर्णय घेतले जातात?
-          </p>
+        <div class="problem-item">
+          ❌ Leads येतात पण Sales मध्ये Convert होत नाहीत?
         </div>
 
       </div>
 
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       HIGHLIGHT
-  ========================== -->
-
-  <section class="highlight-section">
-
-    <div class="container">
-
-      <div class="highlight-box">
-
-        <h2>
-          ✅ मग हे eBook तुमच्यासाठी आहे
-        </h2>
-
-        <p>
-          <strong>
-            Practical Trading समजून घेण्यासाठी तयार केलेले eBook
-          </strong>
-          <br>
-
-          Theory पेक्षा Practical Understanding वर भर देऊन
-          Trading च्या महत्त्वाच्या संकल्पना सोप्या मराठीत
-          समजून घेण्याचा प्रयत्न.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       LEARNING
-  ========================== -->
-
-  <section class="learning-section">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        तुम्हाला या eBook मधून काय शिकायला मिळेल?
-      </h2>
-
-      <div class="learning-grid">
-
-        <div class="learning-card">
-
-          <div class="learning-icon">📊</div>
-
-          <h3>Trading Basics</h3>
-
-          <p>
-            शेअर मार्केट आणि Trading ची
-            मूलभूत माहिती समजून घ्या.
-          </p>
-
-        </div>
-
-
-        <div class="learning-card">
-
-          <div class="learning-icon">📈</div>
-
-          <h3>Charts समजून घ्या</h3>
-
-          <p>
-            Price Chart कसा वाचायचा आणि
-            त्यातील basic information कशी समजून घ्यायची.
-          </p>
-
-        </div>
-
-
-        <div class="learning-card">
-
-          <div class="learning-icon">⚡</div>
-
-          <h3>Intraday Trading</h3>
-
-          <p>
-            Intraday Trading करताना Planning
-            आणि Discipline कसे ठेवायचे.
-          </p>
-
-        </div>
-
-
-        <div class="learning-card">
-
-          <div class="learning-icon">🛡️</div>
-
-          <h3>Risk Management</h3>
-
-          <p>
-            Trade मध्ये Risk कसा नियंत्रित करायचा
-            आणि Capital Protection का महत्त्वाचे आहे.
-          </p>
-
-        </div>
-
-
-        <div class="learning-card">
-
-          <div class="learning-icon">🧠</div>
-
-          <h3>Trading Psychology</h3>
-
-          <p>
-            Fear, Greed आणि Emotional Decisions
-            वर नियंत्रण ठेवण्यासाठी आवश्यक mindset.
-          </p>
-
-        </div>
-
-
-        <div class="learning-card">
-
-          <div class="learning-icon">📝</div>
-
-          <h3>Practical Approach</h3>
-
-          <p>
-            Trading शिकताना वापरता येईल असा
-            structured आणि practical approach.
-          </p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       AUDIENCE
-  ========================== -->
-
-  <section class="audience-section">
-
-    <div class="container">
-
-      <h2 class="section-title">
-        eBook कोणासाठी आहे?
-      </h2>
-
-      <p class="section-description">
-        हे eBook विशेषतः त्यांच्यासाठी आहे ज्यांना —
+      <p class="problem-note">
+        यापैकी एकही समस्या असेल, तर हे eBook तुमच्यासाठी आहे.
       </p>
 
-      <div class="audience-list">
-
-        <div class="audience-item">
-          ✅ Trading ची सुरुवात करायची आहे
-        </div>
-
-        <div class="audience-item">
-          ✅ मराठीतून Trading समजून घ्यायची आहे
-        </div>
-
-        <div class="audience-item">
-          ✅ Charts आणि Trading Basics शिकायचे आहेत
-        </div>
-
-        <div class="audience-item">
-          ✅ Intraday बद्दल Practical Understanding हवी आहे
-        </div>
-
-        <div class="audience-item">
-          ✅ Risk Management समजून घ्यायचे आहे
-        </div>
-
-        <div class="audience-item">
-          ✅ Trading मध्ये Discipline तयार करायचे आहे
-        </div>
-
-      </div>
-
     </div>
-
   </section>
 
 
   <!-- =========================
-       WHAT YOU GET
-  ========================== -->
+       WHAT YOU'LL LEARN
+  ========================= -->
 
-  <section class="get-section">
-
+  <section>
     <div class="container">
 
       <h2 class="section-title">
-        तुम्हाला काय मिळेल?
+        या eBook मध्ये तुम्ही <span>शिकाल:</span>
       </h2>
 
-      <div class="get-box">
+      <div class="learn-grid">
 
-        <div class="get-list">
+        <div class="learn-item">
+          <h3>🎯 Target Customer</h3>
+          <p>योग्य ग्राहक कसा शोधायचा?</p>
+        </div>
 
-          <div class="get-item">
-            📘 <strong>1 Complete eBook</strong>
-          </div>
+        <div class="learn-item">
+          <h3>👥 Online & Offline Customers</h3>
+          <p>ग्राहक कुठे शोधायचे?</p>
+        </div>
 
-          <div class="get-item">
-            🇮🇳 मराठीत Practical Trading Guide
-          </div>
+        <div class="learn-item">
+          <h3>📣 Marketing</h3>
+          <p>तुमच्या व्यवसायाची Marketing कशी करायची?</p>
+        </div>
 
-          <div class="get-item">
-            📊 Trading Basics + Charts
-          </div>
-
-          <div class="get-item">
-            ⚡ Intraday Concepts
-          </div>
-
-          <div class="get-item">
-            🛡️ Risk Management
-          </div>
-
-          <div class="get-item">
-            🧠 Trading Psychology
-          </div>
-
-          <div class="get-item">
-            ♾️ Lifetime Digital Access
-          </div>
-
+        <div class="learn-item">
+          <h3>📈 Leads ते Sales</h3>
+          <p>ग्राहकाला Sales मध्ये कसे Convert करायचे?</p>
         </div>
 
       </div>
 
     </div>
-
   </section>
 
 
   <!-- =========================
-       OFFER
-  ========================== -->
+       VALUE SECTION
+  ========================= -->
 
-  <section class="offer-section" id="offer">
-
-    <div class="container">
-
-      <div class="offer-box">
-
-        <div class="offer-label">
-          🔥 LAUNCH OFFER
-        </div>
-
-        <div class="offer-title">
-          शेअर मार्केट PRACTICAL MARATHI
-        </div>
-
-        <div class="price-old">
-          ₹999
-        </div>
-
-        <div class="price-new">
-          ₹400
-        </div>
-
-        <p class="offer-text">
-          आज फक्त ₹400 मध्ये
-        </p>
-
-        <div class="offer-product">
-          📘 शेअर मार्केट PRACTICAL MARATHI
-        </div>
-
-
-        <!--
-          ALL THREE BUTTONS USE THE SAME PAYMENT LINK
-        -->
-
-        <div class="cta-buttons">
-
-          <a
-            href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
-            class="buy-btn primary"
-          >
-            🛒 ₹400 मध्ये खरेदी करा
-          </a>
-
-          <a
-            href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
-            class="buy-btn"
-          >
-            📘 eBook खरेदी करा
-          </a>
-
-          <a
-            href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
-            class="buy-btn"
-          >
-            🚀 लगेच सुरू करा — ₹400
-          </a>
-
-        </div>
-
-        <div class="payment-note">
-          🔒 Secure Checkout • Digital Product
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       PAYMENT SUCCESS
-  ========================== -->
-
-   
-
-
-  <!-- =========================
-       TRUST
-  ========================== -->
-
-  <section class="trust-section">
-
-    <div class="container">
-
-      <div class="trust-grid">
-
-        <div class="trust-item">
-          <div class="trust-icon">🔒</div>
-          <strong>Secure Payment</strong>
-          <span>Safe Checkout</span>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon">⚡</div>
-          <strong>Instant Digital Access</strong>
-          <span>Easy Access</span>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon">♾️</div>
-          <strong>Lifetime Access</strong>
-          <span>One Time Purchase</span>
-        </div>
-
-        <div class="trust-item">
-          <div class="trust-icon">📱</div>
-          <strong>Mobile Friendly</strong>
-          <span>Read Anywhere</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       DISCLAIMER
-  ========================== -->
-
-  <section class="disclaimer-section">
-
-    <div class="container">
-
-      <div class="disclaimer-box">
-
-        <h3>
-          ⚠️ महत्त्वाची सूचना
-        </h3>
-
-        <p>
-          हे eBook केवळ शैक्षणिक आणि माहितीच्या उद्देशाने
-          तयार केले आहे. यात कोणत्याही प्रकारच्या निश्चित
-          नफा किंवा निश्चित Returns ची हमी दिलेली नाही.
-          <br><br>
-
-          Trading/Investing मध्ये Market Risk असतो.
-          कोणताही निर्णय घेण्यापूर्वी स्वतःचे Research
-          आणि योग्य Risk Management करा.
-        </p>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- =========================
-       SOCIAL MEDIA
-  ========================== -->
-
-  <section class="social-section">
-
+  <section class="value">
     <div class="container">
 
       <h2 class="section-title">
-        आमच्याशी Connect व्हा
+        फक्त माहिती नाही…
+        <br>
+        <span>Practical मार्गदर्शन.</span>
       </h2>
 
-      <p class="section-description">
-        Trading, Stock Market आणि नवीन Learning Content
-        साठी Follow करा.
+      <p>
+        या eBook चा उद्देश तुम्हाला तुमच्या व्यवसायासाठी
+        योग्य ग्राहक शोधणे, त्यांच्यापर्यंत पोहोचणे आणि
+        विक्री वाढवण्यासाठी स्पष्ट दिशा देणे हा आहे.
       </p>
 
-      <div class="social-buttons">
+    </div>
+  </section>
 
-        <a
-          href="https://www.instagram.com/digital.pustakalay?stkn=bWo4emhvZjUzYjY2"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="social-btn"
-        >
-          📸 Instagram
-        </a>
 
-        <a
-          href="YOUR_FACEBOOK_URL"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="social-btn"
-        >
-          👍 Facebook
-        </a>
+  <!-- =========================
+       WHO IS IT FOR
+  ========================= -->
+
+  <section>
+    <div class="container">
+
+      <h2 class="section-title">
+        हे eBook <span>कोणासाठी?</span>
+      </h2>
+
+      <div class="who-list">
+
+        <div class="who-item">✔️ नवीन व्यवसाय सुरू करणाऱ्यांसाठी</div>
+
+        <div class="who-item">✔️ Small Business Owners साठी</div>
+
+        <div class="who-item">✔️ दुकानदार आणि Service Providers साठी</div>
+
+        <div class="who-item">✔️ Freelancers साठी</div>
+
+        <div class="who-item">✔️ Online Business करणाऱ्यांसाठी</div>
+
+        <div class="who-item">✔️ स्वतःचा व्यवसाय वाढवू इच्छिणाऱ्यांसाठी</div>
 
       </div>
 
     </div>
-
   </section>
 
 
   <!-- =========================
        FINAL CTA
-  ========================== -->
+  ========================= -->
 
   <section class="final-cta">
 
     <div class="container">
 
-      <h2>
-        Trading शिकण्याची सुरुवात आज करा.
+      <h2 class="section-title">
+        ग्राहक शोधण्याचा अंदाज सोडा.
+        <br>
+        <span>योग्य पद्धतीने सुरुवात करा.</span>
       </h2>
 
-      <p>
-        शेअर मार्केट PRACTICAL MARATHI
+      <p class="final-text">
+        आजची किंमत:
       </p>
 
       <div class="final-price">
-
-        <span class="final-old">
-          ₹999
-        </span>
-
-        <span class="final-new">
-          ₹400
-        </span>
-
+        <span class="old-price">₹999</span>
+        <span class="new-price">₹400</span>
       </div>
 
-      <a
-        href="https://superprofile.bio/vp/शेअर-मार्केट-प्रॅक्टिकल-मराठी-"
-        class="final-btn"
-      >
-        🚀 लगेच खरेदी करा — ₹400
+      <!-- PAYMENT LINK येथे बदला -->
+      <a href="https://superprofile.bio/vp/व्यवसाय-आहे-ग्राहक-कुठे-आहेत-"
+         class="cta"
+         onclick="trackPurchaseClick()">
+        ₹400 मध्ये eBook खरेदी करा →
+      </a>
+
+      <p class="instant">
+        Instant Digital Access
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       INSTAGRAM
+  ========================= -->
+
+  <section class="instagram">
+
+    <div class="container">
+
+      <p>
+        अधिक Business Tips साठी Instagram वर Follow करा
+      </p>
+
+      <!-- तुमची Instagram Link येथे टाका -->
+      <a href="https://www.instagram.com/digital.pustakalay?stkn=bWo4emhvZjUzYjY2"
+         target="_blank"
+         rel="noopener">
+        📸 Follow us on Instagram →
       </a>
 
     </div>
@@ -1455,17 +699,32 @@
   </section>
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
   <footer>
-
-    © 2026 शेअर मार्केट PRACTICAL MARATHI.
-    All Rights Reserved.
-
+    © 2026 Practical Business Guide. All Rights Reserved.
   </footer>
 
 
+  <!-- =========================
+       META PIXEL CTA TRACKING
+  ========================= -->
+
+  <script>
+
+    function trackPurchaseClick() {
+
+      if (typeof fbq !== 'undefined') {
+
+        fbq('track', 'InitiateCheckout', {
+          content_name: 'व्यवसाय आहे, ग्राहक कुठे आहेत?',
+          value: 400,
+          currency: 'INR'
+        });
+
+      }
+
+    }
+
+  </script>
+
 </body>
-</html>
+</html>      
